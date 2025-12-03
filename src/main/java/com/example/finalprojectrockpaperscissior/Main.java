@@ -1,19 +1,18 @@
 package com.example.finalprojectrockpaperscissior;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
 
     @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/com/example/finalprojectrockpaperscissior/GameView.fxml")
-        );
+    public void start(Stage stage) {
+        GameController controller = new GameController();
+        GameView view = new GameView();
 
-        Scene scene = new Scene(loader.load());
+        Scene scene = view.createScene(controller);
+
         stage.setScene(scene);
         stage.setTitle("Rock Paper Scissors");
         stage.show();

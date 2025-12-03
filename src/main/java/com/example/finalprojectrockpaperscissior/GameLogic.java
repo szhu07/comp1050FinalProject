@@ -46,7 +46,7 @@ public class GameLogic {
 
     public String getFinalWinner() {
         if (playerScore > computerScore) return "🎉 YOU WIN THE GAME!";
-        return "💀 COMPUTER WINS THE GAME!";
+        return "🙁 COMPUTER WINS THE GAME!";
     }
 
     public void reset() {

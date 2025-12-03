@@ -5,11 +5,11 @@ import javafx.scene.control.Label;
 
 public class GameController {
 
-    @FXML private Label playerMoveLabel;
-    @FXML private Label computerMoveLabel;
-    @FXML private Label roundResultLabel;
-    @FXML private Label scoreLabel;
-    @FXML private Label finalMessageLabel;
+    public Label playerMoveLabel;
+    public Label computerMoveLabel;
+    public Label roundResultLabel;
+    public Label scoreLabel;
+    public Label finalMessageLabel;
 
     private GameLogic logic = new GameLogic();
 
