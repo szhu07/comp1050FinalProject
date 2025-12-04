@@ -13,17 +13,16 @@ public class GameController {
 
     private GameLogic logic = new GameLogic();
 
-    @FXML
+
     public void onRock() {
         playRound(Move.ROCK);
     }
 
-    @FXML
+
     public void onPaper() {
         playRound(Move.PAPER);
     }
 
-    @FXML
     public void onScissors() {
         playRound(Move.SCISSORS);
     }
